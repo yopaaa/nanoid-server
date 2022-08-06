@@ -1,0 +1,18 @@
+{
+  "name": "nanoid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node main.js",
+    "restart": "nodemon main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nanoid": "^4.0.0"
+  }
+}
