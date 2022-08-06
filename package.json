@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node main.js",
+    "start": "NODE_ENV=production node main.js",
     "restart": "nodemon main.js"
   },
   "keywords": [],
