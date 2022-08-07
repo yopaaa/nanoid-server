@@ -11,5 +11,5 @@ app.get('/', function (req, res) {
 console.log(host);
 
 app.listen(8000,host,function () {
-  console.log('app listen on http://localhost:8000')
+  console.log(`app listen on http://${host}:8000`)
 })
