@@ -2,7 +2,7 @@
 import express from "express";
 import {nanoid} from 'nanoid';
 const app = express()
-const host = process.env.NODE_ENV !== 'production' ? 'localhost' : '0.0.0.0'
+const host = '0.0.0.0'
 const port = 8000;
 
 app.get('/', function (req, res) {
@@ -11,6 +11,6 @@ app.get('/', function (req, res) {
 
 console.log(host);
 
-app.listen(port,host,function () {
+app.listen(8000,host,function () {
   console.log(`app listen on http://${host}:${port}`)
 })

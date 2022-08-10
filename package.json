@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "NODE_ENV=production node main.js",
+    "start": "pm2 start main.js",
     "restart": "nodemon main.js"
   },
   "keywords": [],
@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.1",
-    "nanoid": "^4.0.0"
+    "nanoid": "^4.0.0",
+    "pm2": "^5.2.0"
   }
 }
