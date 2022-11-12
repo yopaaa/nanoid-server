@@ -1,16 +1,15 @@
-// const express = require('express')
 import express from "express";
 import {nanoid} from 'nanoid';
+import dotenv from 'dotenv'; dotenv.config();
+
 const app = express()
-const host = '0.0.0.0'
-const port = 8000;
+const host = process.env.HOST
+const port = process.env.PORT;
 
 app.get('/', function (req, res) {
   res.send(`<center><h1 style="font-size:80px;">${nanoid(25)}</h1></center>`)
 })
 
-console.log(host);
-
-app.listen(8000,host,function () {
+app.listen(port,host,function () {
   console.log(`app listen on http://${host}:${port}`)
 })
